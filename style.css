@@ -31,5 +31,173 @@ html { box-sizing: border-box; }
 
 body {
 	margin: 0;
+	font-family: 'Lora', serif;
+	font-size: 18px;
+	line-height: 1.5;
+	color: #242424	;
+	
+	
 }
 
+h1, h2, h3{
+	font-family: 'Playfair Display', serif;
+	line-height: 1.25;
+	font-weight: bold;
+	color: #3e606b	;
+}
+
+h1{
+	font-size: 52px;
+}
+
+h2{
+	font-size: 36px ;
+	color: #3e606b;
+}
+
+h3{
+	font-size: 18px;
+}
+
+img .vetsi{
+	border-radius: 5px;
+}
+
+header{
+	display: flex;
+}
+
+header .leva{
+	flex-grow: 1;
+	flex-shrink: 0;
+	display: flex;
+}
+
+
+
+.hero .leva{
+	flex-basis: 60%;
+	flex-grow: 1;
+	flex-shrink: 0;
+}
+
+.hero .prava{
+flex-basis: 40%;
+flex-grow: 0;
+flex-shrink: 0;
+}
+
+.logo{
+	width: 170px;
+	padding: 30px
+}
+
+.menu{
+	padding: 10px 15px;
+	
+}
+
+.menu a{
+	text-decoration: none;
+	padding: 10px 15px;
+	border-radius: 20px
+}
+
+.menu a:active, 
+.menu a:hover, 
+.menu a:focus{
+	background-color: #d2567d ;
+	color: white;
+}
+
+.menu li{
+display: inline-block;
+text-align: left;
+justify-content: flex-end;
+}
+
+
+
+section{
+padding: 80px 0 80px 0;
+margin: 0 auto;
+display: flex;
+align-items: center;
+
+
+}
+
+.hero{
+background-image: url(images/cupcake.jpg);
+background-position: center;
+background-size: cover;
+color: white;
+}
+
+.hero h1{
+	color: white;
+}
+
+.hero p{
+	font-size: 24px;
+	font-style: italic;
+}
+
+.vitejte img{
+	float: left;
+}
+
+.nabidka{
+flex-wrap: wrap;
+}
+
+.nabidka .uvod {
+	flex-grow: 1;
+	flex-shrink: 0;
+	flex-basis: 100%;
+
+}
+
+.box{
+	display: flex;
+	justify-content: space-between;
+}
+
+.karta{
+	border-radius: 5px;
+	
+
+}
+
+.textkarty{
+	padding: 20px;
+	background-color: #f0f0f0;
+	text-align: center;
+}
+
+.tlacitko{
+	background-color: #f195b2;
+	color: white;
+	text-decoration: none;
+	border-radius: 30px;
+	padding: 15px 40px;
+}
+
+
+.tlacitko :hover, 
+.tlacitko :focus, 
+.tlacitko :active {
+	background-color: #d2567d;
+
+}
+
+.nabidka{
+background-color: #f0f0f0 ;
+}
+
+footer{
+	text-align: center;
+	background-color: #303339;
+	color: white;
+	padding: 30px ;
+}
