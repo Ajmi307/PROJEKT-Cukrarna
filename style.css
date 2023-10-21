@@ -1,7 +1,12 @@
 /* intuitivnější box-sizing pro všechny prvky na stránce */
-html { box-sizing: border-box; }
-*, ::before, ::after { box-sizing: inherit; }
-
+html {
+  box-sizing: border-box;
+}
+*,
+::before,
+::after {
+  box-sizing: inherit;
+}
 
 /*
 	Poznámky:
@@ -28,176 +33,188 @@ html { box-sizing: border-box; }
 	#303339		tmavé pozadí patičky
 */
 
-
 body {
-	margin: 0;
-	font-family: 'Lora', serif;
-	font-size: 18px;
-	line-height: 1.5;
-	color: #242424	;
-	
-	
+  margin: 0;
+  font-family: "Lora", serif;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #242424;
 }
 
-h1, h2, h3{
-	font-family: 'Playfair Display', serif;
-	line-height: 1.25;
-	font-weight: bold;
-	color: #3e606b	;
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+  line-height: 1.25;
+  font-weight: bold;
+  color: #3e606b;
 }
 
-h1{
-	font-size: 52px;
+h1 {
+  font-size: 52px;
 }
 
-h2{
-	font-size: 36px ;
-	color: #3e606b;
+h2 {
+  font-size: 36px;
+  color: #3e606b;
 }
 
-h3{
-	font-size: 18px;
+h3 {
+  font-size: 18px;
 }
 
-img .vetsi{
-	border-radius: 5px;
+header {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 30px auto;
 }
 
-header{
-	display: flex;
+header .prava {
+  display: flex;
 }
 
-header .leva{
-	flex-grow: 1;
-	flex-shrink: 0;
-	display: flex;
+.logo {
+  width: 170px;
 }
 
-
-
-.hero .leva{
-	flex-basis: 60%;
-	flex-grow: 1;
-	flex-shrink: 0;
+.menu a {
+  text-decoration: none;
+  padding: 10px 15px;
+  border-radius: 20px;
 }
 
-.hero .prava{
-flex-basis: 40%;
-flex-grow: 0;
-flex-shrink: 0;
+.menu a:active,
+.menu a:hover,
+.menu a:focus {
+  background-color: #f195b2;
+  color: white;
 }
 
-.logo{
-	width: 170px;
-	padding: 30px
+.menu li {
+  display: inline-block;
 }
 
-.menu{
-	padding: 10px 15px;
-	
+section {
+  padding: 80px 0 80px 0;
+  margin: 0 auto;
+  display: block;
+  justify-content: center;
 }
 
-.menu a{
-	text-decoration: none;
-	padding: 10px 15px;
-	border-radius: 20px
+.content {
+  max-width: 1100px;
+  display: flex;
+  margin: 0px auto;
 }
 
-.menu a:active, 
-.menu a:hover, 
-.menu a:focus{
-	background-color: #d2567d ;
-	color: white;
+.hero .leva {
+  padding-right: 40%;
 }
 
-.menu li{
-display: inline-block;
-text-align: left;
-justify-content: flex-end;
+.hero {
+  background-image: url(images/cupcake.jpg);
+  background-position: center;
+  background-size: cover;
+  color: white;
 }
 
+.hero h1 {
+  color: white;
+}
 
+.hero p {
+  font-size: 24px;
+  font-style: italic;
+}
 
-section{
-padding: 80px 0 80px 0;
-margin: 0 auto;
-display: flex;
-align-items: center;
+.vitejte,
+.pristup {
+  display: flex;
+  align-items: center;
+}
 
+.fotka img {
+  border-radius: 5px;
+}
+
+.vitejte .text {
+  margin-right: 30px;
+}
+.pristup .text {
+  margin-left: 30px;
+}
+
+.tlacitko {
+  background-color: #f195b2;
+  color: white;
+  text-decoration: none;
+  border-radius: 30px;
+  padding: 15px 40px;
+  margin-top: 30px;
+  display: inline-block;
 
 }
 
-.hero{
-background-image: url(images/cupcake.jpg);
-background-position: center;
-background-size: cover;
-color: white;
+.tlacitko:hover,
+.tlacitko:focus,
+.tlacitko:active {
+  background-color: #d2567d;
 }
 
-.hero h1{
-	color: white;
+.nabidka {
+  background-color: #f0f0f0;
 }
 
-.hero p{
-	font-size: 24px;
-	font-style: italic;
-}
-
-.vitejte img{
-	float: left;
-}
-
-.nabidka{
-flex-wrap: wrap;
+.nabidka .content {
+  flex-wrap: wrap;
 }
 
 .nabidka .uvod {
-	flex-grow: 1;
-	flex-shrink: 0;
-	flex-basis: 100%;
-
+  flex-grow: 1;
+  flex-shrink: 0;
+  flex-basis: 100%;
 }
 
-.box{
-	display: flex;
-	justify-content: space-between;
+.recepty {
+  flex-basis: 1100px;
+  flex-shrink: 1;
+  flex-grow: 0;
+  display: flex;
 }
 
-.karta{
-	border-radius: 5px;
-	
-
+.jedna,
+.dva,
+.tri,
+.ctyri {
+  flex-direction: column;
+  flex-basis: 25%;
+  flex-shrink: 1;
+  flex-grow: 0;
+  background-color: white;
+  border-radius: 5px;
+  justify-content: space-between;
+  overflow: hidden;
 }
 
-.textkarty{
-	padding: 20px;
-	background-color: #f0f0f0;
-	text-align: center;
+.jedna,
+.dva,
+.tri {
+  margin-right: 30px;
 }
 
-.tlacitko{
-	background-color: #f195b2;
-	color: white;
-	text-decoration: none;
-	border-radius: 30px;
-	padding: 15px 40px;
+.recepty img {
+  width: 100%;
 }
 
-
-.tlacitko :hover, 
-.tlacitko :focus, 
-.tlacitko :active {
-	background-color: #d2567d;
-
+.textkarty {
+  padding: 20px;
+  text-align: center;
 }
 
-.nabidka{
-background-color: #f0f0f0 ;
-}
-
-footer{
-	text-align: center;
-	background-color: #303339;
-	color: white;
-	padding: 30px ;
+footer {
+  text-align: center;
+  background-color: #303339;
+  color: white;
+  padding: 30px;
 }
